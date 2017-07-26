@@ -1,0 +1,42 @@
+
+                                          Django Buildout
+work envirment:ubantu 16.04 LTS   
+need to connect the net
+===================================================
+open up the command :
+     $ git clone https://github.com/q1009098722/buildout
+     $ cd buildout/django-shorturls/
+     $ python bootstrap.py
+       Creating directory '/home/vidsai004/Downloads/buildout/django-shorturls/eggs'.
+       Creating directory '/home/vidsai004/Downloads/buildout/django-shorturls/bin'.
+       Creating directory '/home/vidsai004/Downloads/buildout/django-shorturls/parts'.
+       Creating directory '/home/vidsai004/Downloads/buildout/django-shorturls/develop-eggs'.
+       Generated script '/home/vidsai004/Downloads/buildout/django-shorturls/bin/buildout'.
+it create some directory 'bin' 'eggs' 'parts',then still in the command:
+     $ ./bin/buildout
+	Upgraded:
+  	setuptools version 36.2.0;
+	restarting.
+	Generated script '/home/vidsai004/Downloads/buildout/django-shorturls/bin/buildout'.
+	Develop: '/home/vidsai004/Downloads/buildout/django-shorturls/.'
+	Getting distribution for 'zc.recipe.egg>=2.0.0a3'.
+	Got zc.recipe.egg 2.0.3.
+	Getting distribution for 'djangorecipe'.
+	Got djangorecipe 2.2.1.
+	Installing python.
+	Generated interpreter '/home/vidsai004/Downloads/buildout/django-shorturls/bin/python'.
+	Installing django.
+	django: There's no directory named after our project. Probably you want to run 'bin/django 	   startproject shorturls'
+	Getting distribution for 'Django'.
+	Got Django 1.11.3.
+	Getting distribution for 'pytz'.
+	Got pytz 2017.2.
+	Generated script '/home/vidsai004/Downloads/buildout/django-shorturls/bin/django'.
+finally,you will see the 'bin' directory create 'django' and 'python' files,then still in 
+the command:
+     $ ./bin/django runserver
+	July 26, 2017 - 09:14:55
+	Django version 1.11.3, using settings 'shorturls.settings'
+	Starting development server at http://127.0.0.1:8000/
+	Quit the server with CONTROL-C.
+Congratulations, runserver success!
